@@ -146,3 +146,61 @@ To build a website for your event scheduling and management application, you'll 
 2. Monitoring and Error Tracking:
 
 - Sentry or New Relic: Monitor and track errors in your application.
+
+# MVP (Minimum Viable Product)
+
+The Minimum Viable Product (MVP) is a version of your application that includes only the essential features needed to attract early adopters early adopters and provide value. For the event scheduling and management application, the MVP might look something like this:
+
+## MVP Features and Functionality:
+
+1. User Authentication:
+
+- Sign-up and sign-in functionality using email and password.
+- Firebase authentication integration.
+
+2. Event Creation:
+
+- Basic form for creating events with essential details (title, date, time and description).
+- Firebase Firestore integration to store event data.
+
+3. Event Discovery:
+
+- Basic event listing on the home page.
+- Allow users to view and click on individual events for details.
+
+4. User Profiles:
+
+- User profiles with basic details (name, email).
+- View user profile page.
+
+5. Basic UI:
+
+- Simple and clean user interface for essential pages (home, sign-up, sign-in, event details, and user profile).
+
+6. Responsive Design:
+
+- Ensure the application is accessible and looks good on various devices.
+
+7. Integration:
+
+- Connect frontend and backend for a seamless user experience.
+
+8. Testing:
+
+- Basic testing of authentication, event creation, and event listing functionalities.
+
+9. Deployment:
+
+- Deploy the application on Vercel, Netlify, or similar platforms.
+
+10. Documentation:
+
+- Basic documentation outlining key aspects of the code and setup.
+
+### What the MVP Doesn't Include:
+
+- Advanced Search and Recommendation Features.
+- Ticketing and RSVP functionality.
+- Social media integration.
+- Chat and networking features.
+- Extensive user profiles with detailed information and history.
