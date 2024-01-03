@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Home | Connect, book, attend.",
+  title: "Connect, book, attend, review, and enjoy. Hence, stay updated.",
 };
 
 export default function Home() {

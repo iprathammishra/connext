@@ -7,6 +7,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/connect-1r1.png" />
+      </head>
       <body className=" font-['Comfortaa']">{children}</body>
     </html>
   );
