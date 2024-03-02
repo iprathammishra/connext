@@ -327,7 +327,7 @@ const InfoMeetingBlock = () => {
                                     <form onSubmit={handleSubmit}>
                                       <p className="text-[.8em]">
                                         Feed your meeting details and click save
-                                        when you're done.
+                                        when you&apos;re done.
                                       </p>
                                       <Input
                                         type="text"

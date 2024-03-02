@@ -194,11 +194,11 @@ const Nav = () => {
                     Never miss a meeting again.
                   </ListItem>
                   <ListItem href="#" title="How to use?">
-                    Click on "New Meeting" button and get started.
+                    Click on &quot;New Meeting&quot; button and get started.
                   </ListItem>
                   <ListItem href="#" title="Edit">
-                    Check "Meeting Information" badge to edit or delete
-                    meetings.
+                    Check &quot;Meeting Information&quot; badge to edit or
+                    delete meetings.
                   </ListItem>
                   <Button
                     onClick={() => {
@@ -245,8 +245,8 @@ const Nav = () => {
                   <AlertDialogDescription>
                     <form onSubmit={handleSubmit}>
                       <p className="text-[.8em]">
-                        Feed your meeting details and click save when you're
-                        done.
+                        Feed your meeting details and click save when
+                        you&apos;re done.
                       </p>
                       <Input
                         type="text"
