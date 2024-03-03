@@ -22,7 +22,7 @@ To install Connext, follow these steps:
 
 ### Usage
 
-1. Open your web browser and go to `https://www.connext.vercel.com`.
+1. Open your web browser and go to `https://connext-phi.vercel.app/`.
 2. Sign up for a new account or log in if you already have one.
 3. Explore the different features of Connext and start managing your events and meetings.
 
