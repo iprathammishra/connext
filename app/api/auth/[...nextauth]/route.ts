@@ -6,7 +6,7 @@ import bcrypt from "bcryptjs";
 import User from "@/models/User";
 import connectDB from "@/lib/db";
 
-export const authOptions = {
+const handler = NextAuth({
   providers: [
     CredentialsProvider({
       id: "credentials",
@@ -39,9 +39,15 @@ export const authOptions = {
     }),
   ],
   callbacks: {
-    async signIn({ user, account }: { user: AuthUser; account: Account }) {
-      if (account?.provider == "credentials") return true;
-      if (account?.provider == "github") {
+    async signIn({
+      user,
+      account,
+    }: {
+      user: AuthUser;
+      account: Account | null;
+    }): Promise<string | boolean> {
+      if (account?.provider === "credentials") return true;
+      if (account?.provider === "github") {
         await connectDB();
         try {
           const existingUser = await User.findOne({ email: user.email });
@@ -58,9 +64,8 @@ export const authOptions = {
           return false;
         }
       }
+      return false;
     },
   },
-};
-
-export const handler = NextAuth(authOptions);
+});
 export { handler as GET, handler as POST };
