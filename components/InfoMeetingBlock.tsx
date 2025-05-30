@@ -75,7 +75,7 @@ const InfoMeetingBlock = () => {
   const getUserIdByEmail = async (email: string) => {
     try {
       const res = await fetch(
-        "https://xback.netlify.app/.netlify/functions/app/users",
+        "https://connext-backend.netlify.app/.netlify/functions/app/users",
         {
           cache: "no-store",
         }
@@ -98,7 +98,7 @@ const InfoMeetingBlock = () => {
   const getMeetings = async (userId: string) => {
     try {
       const res = await fetch(
-        `https://xback.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
+        `https://connext-backend.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
         {
           cache: "no-store",
         }
@@ -150,7 +150,7 @@ const InfoMeetingBlock = () => {
     try {
       const userId = await getUserIdByEmail(session.user?.email);
       const res = await fetch(
-        `https://xback.netlify.app/.netlify/functions/app/users/${userId}/meetings/${meetingId}`,
+        `https://connext-backend.netlify.app/.netlify/functions/app/users/${userId}/meetings/${meetingId}`,
         {
           method: "DELETE",
         }
@@ -191,7 +191,7 @@ const InfoMeetingBlock = () => {
     };
     try {
       const res = await fetch(
-        `https://xback.netlify.app/.netlify/functions/app/users/${userId}/meetings/${editingMeetingId}`,
+        `https://connext-backend.netlify.app/.netlify/functions/app/users/${userId}/meetings/${editingMeetingId}`,
         {
           method: "PUT",
           headers: {

@@ -38,7 +38,7 @@ const RapidMeetingBlock = () => {
   const getUserIdByEmail = async (email: string) => {
     try {
       const res = await fetch(
-        "https://xback.netlify.app/.netlify/functions/app/users",
+        "https://connext-backend.netlify.app/.netlify/functions/app/users",
         {
           cache: "no-store",
         }
@@ -61,7 +61,7 @@ const RapidMeetingBlock = () => {
   const getMeetings = async (userId: string) => {
     try {
       const res = await fetch(
-        `https://xback.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
+        `https://connext-backend.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
         {
           cache: "no-store",
         }

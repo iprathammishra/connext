@@ -90,7 +90,7 @@ const Nav = () => {
   const getUsers = async () => {
     try {
       const res = await fetch(
-        "https://xback.netlify.app/.netlify/functions/app/users",
+        "https://connext-backend.netlify.app/.netlify/functions/app/users",
         {
           cache: "no-store",
         }
@@ -130,7 +130,7 @@ const Nav = () => {
     };
     try {
       const res = await fetch(
-        `https://xback.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
+        `https://connext-backend.netlify.app/.netlify/functions/app/users/${userId}/meetings`,
         {
           method: "POST",
           headers: {
